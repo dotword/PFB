@@ -6,7 +6,7 @@ dotenv.config();
 import express from 'express';
 const app = express();
 
-const { PORT, A } = process.env;
+const { PORT, A, MYSQL_PORTA } = process.env;
 
 app.get('/', (req, res) => {
     res.send('Hola desde PFB');
