@@ -6,12 +6,12 @@ dotenv.config();
 import express from 'express';
 const app = express();
 
-const {PORT} = process.env;
+const { PORT } = process.env;
 
 app.get('/', (req, res) => {
-    res.send('Hola desde PFB');
+  res.send('Hola desde PFB');
 });
 
 app.listen(PORT, () => {
-    console.log(`Server on ${PORT}`);
-})
+  console.log(`Server on ${PORT}`);
+});
